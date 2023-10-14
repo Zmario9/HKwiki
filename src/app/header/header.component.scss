@@ -1,0 +1,27 @@
+$heightLogoImg: 100% !important;
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+@media only screen and (max-width: 600px){
+    header{
+        height: 10vh;
+        .navbar{
+            position: sticky;
+            top: 0;
+            height: $heightLogoImg;
+            background-color: transparent !important;
+            .container-fluid{
+                height: $heightLogoImg;
+                a{
+                    height: $heightLogoImg;
+                    img{
+                        height: $heightLogoImg;
+                    }
+                }
+            }
+        }
+    }
+}

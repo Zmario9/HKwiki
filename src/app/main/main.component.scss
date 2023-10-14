@@ -1,0 +1,23 @@
+main{
+    width: 100%;
+}
+#downloadLink{
+    background-image: url('/../assets/imgs/Shaaah.jpg');
+    // box-shadow:  inset 0px 11px 8px -10px #0A0A14, inset 0px -11px 8px -10px #0A0A14; 
+    box-shadow:  inset 0px 50px 50px -10px #0A0A14, inset 0px -50px 30px 0px #0A0A14; 
+    // &::after{
+    //     background-color: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(127,10,230,1) 50%, rgba(0,0,0,1) 100%);
+    // }
+    background-repeat: no-repeat;
+    // background-position: center;
+    background-position: 15%;
+    background-size: cover;
+}
+@media only screen and (max-width: 600px){
+    main{
+        // height: 120vh;
+        #downloadLink{
+            height: 300px;
+        }
+    }
+}
