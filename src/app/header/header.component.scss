@@ -1,13 +1,22 @@
 $heightLogoImg: 100% !important;
+$textFonts: 'Poppins', sans-serif;;
 
 header{
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 @media only screen and (max-width: 600px){
     header{
         height: 10vh;
+        ul{
+            background-color: #0A0A14;
+            li{
+                font-family: $textFonts;
+                text-align: center;
+            }
+        }
         .navbar{
             position: sticky;
             top: 0;

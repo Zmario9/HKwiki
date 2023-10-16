@@ -5,7 +5,10 @@
 @import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
  
 @import 'node_modules/mdb-angular-ui-kit/assets/scss/mdb.scss';
-
+//FUENTES
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+//VARIABLES
 body{
-    background: #0A0A14;
+    background-color: #0A0A14;
 }

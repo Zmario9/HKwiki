@@ -1,23 +1,50 @@
+//VARIABLES
+$dlButtonBaseWidth: 9em;
+$titleFonts: 'Noto Serif', serif;
+$textFonts: 'Poppins', sans-serif;
 main{
     width: 100%;
-}
-#downloadLink{
-    background-image: url('/../assets/imgs/Shaaah.jpg');
-    // box-shadow:  inset 0px 11px 8px -10px #0A0A14, inset 0px -11px 8px -10px #0A0A14; 
-    box-shadow:  inset 0px 50px 50px -10px #0A0A14, inset 0px -50px 30px 0px #0A0A14; 
-    // &::after{
-    //     background-color: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(127,10,230,1) 50%, rgba(0,0,0,1) 100%);
-    // }
-    background-repeat: no-repeat;
-    // background-position: center;
-    background-position: 15%;
-    background-size: cover;
+    #downloadLink{
+        background-image: url('/../assets/imgs/Shaaah.jpg');
+        box-shadow:  inset 0px 50px 50px -10px #0A0A14, inset 0px -50px 30px 0px #0A0A14; 
+        background-repeat: no-repeat;
+        background-position: 15%;
+        background-size: cover;
+        display: flex;
+        button{
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 @media only screen and (max-width: 600px){
     main{
         // height: 120vh;
         #downloadLink{
             height: 300px;
+            justify-content: center;
+            align-items: end;
+            button{
+                font-family: $titleFonts;
+                margin-bottom: 2.3em;
+                width: $dlButtonBaseWidth;
+                background-color: #EC6514 !important;
+                font-size: 1.2em;
+                padding: {
+                    top: 5px;
+                    right: 5px;
+                    left: 5px;
+                    bottom: 3px;
+                }
+                ion-icon{
+                    font-size: 1.3em;
+                    margin-left: 0.3em;
+                }
+                &:hover{
+                    transition-duration: .5s;
+                    background-color: #faa433 !important;
+                }
+            }
         }
     }
 }
